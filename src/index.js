@@ -18,6 +18,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.listen(8000, () => {
+const port = process.env.PORT || 8000;
+app.listen(port, () => {
   console.log(`Server connected to port 8000`);
 });
